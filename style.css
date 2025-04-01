@@ -55,6 +55,7 @@ justify-content: space-around;
     display: flex;
     justify-content: space-around;
 }
+
 .class11th{
     background-color: #7678ED;
     height: 800px;
@@ -66,6 +67,7 @@ justify-content: space-around;
     align-items: center;
     border-radius: 20px;
 }
+
 .imgcards{
     height: 750px;
     border-radius: 20px;
