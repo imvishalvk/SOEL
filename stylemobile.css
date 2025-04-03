@@ -8,6 +8,13 @@
     .heroimage{
         height: 300px;
         margin: 0 20px 0 20px;
+        padding: 20px 0 0 0 ;
+    }
+    .herohead{
+        font-size: 30px;
+    }
+    .herodes{
+        font-size: 20px;
     }
     .hero1{
         display: flex;
@@ -25,10 +32,11 @@
         margin-top: 0px;
     }
     .imgcards{
-        height: 250px;
+        height: 200px;
     }
     .class11th{
-        height: 300px;
+        height: 260px;
+        width: 45%;
         margin:0 10px 30px 10px;
     }
     .values1, .values2, .values3 {
@@ -42,6 +50,9 @@
     .headhero3{
         padding: 0 0 0 20px;
         font-size: 20px;
+    }
+    .headfeatures{
+        font-size: 30px;
     }
     .featuresmobile{
         flex-direction: column-reverse;
