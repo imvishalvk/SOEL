@@ -9,7 +9,9 @@
         margin: 20px;
         height: 400px;
     }
-    
+    .herotext{
+        padding-left: 20px;
+    }
 }
 @media screen and (max-width: 900px) {
     .hero1{
