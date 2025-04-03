@@ -134,12 +134,12 @@ justify-content: space-around;
 }
 .fcontent{
     background-color: #EF476F;
-    width: 55%;
+    width:60%;
     height: 80%;
     margin: 30px 0px 30px 30px;
     padding: 30px 0 30px 30px;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-border-radius: 15px;}
+    border-radius: 15px;}
 .flex{
     display: flex;
     align-items: center;
