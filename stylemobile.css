@@ -72,4 +72,12 @@
     .flexmobile{
         flex-direction: column ;
     }
+
+    /*footer section */
+    .footer-container{
+        flex-wrap: wrap;
+    }
+    .footer-section{
+        padding: 20px;
+    }
 }

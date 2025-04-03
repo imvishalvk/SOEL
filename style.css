@@ -154,3 +154,38 @@ justify-content: space-around;
     font-size: 50px;
     text-align: center;
 }
+
+/* footer section */
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+}
+.footer-section{
+    padding: 50px;
+    justify-items: start;
+}
+.footer-section h3{
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em;
+}
+.social-icons a {
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+}
+.social-icons a:hover {
+    color: red;
+}
