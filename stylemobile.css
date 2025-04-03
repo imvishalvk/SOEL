@@ -37,7 +37,7 @@
         align-items: center;
     }
     .imagee{
-        height: 250px;
+        height: 200px;
     }
     .headhero3{
         padding: 0 0 0 20px;
@@ -55,7 +55,7 @@
     .ftext{
         padding: 0 10px 0 10px;
         font-size: 15px;
-        
+        text-align: center;
     }
     .flexmobile{
         flex-direction: column ;
