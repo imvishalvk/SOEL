@@ -1,111 +1,163 @@
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 975px) {
 
-    .head{
+    .head {
         height: 60px;
         font-size: 40px;
     }
-    .hero1{
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
+
+    .hero1 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
     }
-    .heroimage{
+
+    .heroimage {
         height: 300px;
         margin: 0 20px 0 20px;
-        padding: 20px 0 0 0 ;
+        padding: 20px 0 0 0;
     }
-    .herohead{
+
+    .herohead {
         font-size: 30px;
     }
-    .herodes{
+
+    .herodes {
         font-size: 20px;
     }
-    .hero1{
+
+    .hero1 {
         display: flex;
         justify-content: center;
         margin: auto;
     }
-    .herotext{
+
+    .herotext {
         margin: 0;
         display: flex;
         justify-content: center;
         margin: auto;
         padding-left: 20px;
     }
-    .off{
+
+    .off {
         display: flex;
         margin-top: 0px;
     }
-    .imgcards{
+
+    .imgcards {
         height: 200px;
     }
-    .class11th{
+
+    .class11th {
         height: 260px;
         width: 45%;
-        margin:0 10px 30px 10px;
+        margin: 0 10px 30px 10px;
     }
-    .values1, .values2, .values3 {
+
+    .values1,
+    .values2,
+    .values3 {
         margin: 20px;
         flex-direction: column;
         align-items: center;
     }
-    .imagee{
+
+    .imagee {
         height: 200px;
     }
-    .headhero3{
+
+    .headhero3 {
         padding: 0 0 0 20px;
         font-size: 20px;
     }
-    .headfeatures{
+
+    .headfeatures {
         font-size: 30px;
     }
-    .featuresmobile{
+
+    .featuresmobile {
         flex-direction: column-reverse;
         padding: 20px 0 20px 0;
     }
-    .fcontent{
+
+    .fcontent {
         width: 85%;
         margin: 30px 0 0 0;
         padding: 0;
     }
-    .ftext{
+
+    .ftext {
         padding: 0 10px 0 10px;
         font-size: 15px;
         text-align: center;
     }
-    .flexmobile{
-        flex-direction: column ;
+
+    .flexmobile {
+        flex-direction: column;
     }
 
     /*footer section */
-    .footer-container{
+    .footer-container {
         flex-wrap: wrap;
     }
-    .footer-section{
+
+    .footer-section {
         padding: 10px;
     }
 
 
     /* Contact form*/
 
-    .contact-left-title h2{
+    .contact-left-title h2 {
         font-size: 4rem;
     }
-    .contact-left-title h1{
+
+    .contact-left-title h1 {
         font-size: 2rem;
         font-weight: 600;
         align-items: center;
         margin-top: 20px;
     }
-    .contact-inputs{
+
+    .contact-inputs {
         width: 250px;
         margin-top: 0;
     }
-    .headtext{
+
+    .headtext {
         display: none;
     }
-    .contact{
+
+    .contact {
         margin-top: 100px;
     }
 
+}
+
+@media screen and (max-width: 1311px) {
+    .class11th{
+        height: 400px;
+    }
+    .imgcards{
+        height: 370px;
+    }
+    
+}
+@media screen and (max-width: 575px) {
+    .class11th{
+        height: 300px;
+    }
+    .imgcards{
+        height: 270px;
+    }
+    
+}
+@media screen and (max-width: 1311px) {
+    .class11th{
+        height: 240px;
+    }
+    .imgcards{
+        height: 200px;
+    }
+    
 }
