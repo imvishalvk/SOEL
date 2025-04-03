@@ -5,6 +5,10 @@
     .imgcards{
         height: 400px;
     }
+    .heroimage{
+        margin: 20px;
+        height: 400px;
+    }
     
 }
 @media screen and (max-width: 900px) {
@@ -13,7 +17,6 @@
     }
     .heroimage{
         margin: 20px;
-        height: 400px;
     }
     .herotext{
         padding-left: 20px;
