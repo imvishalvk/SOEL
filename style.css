@@ -26,6 +26,7 @@ body {
 .navlink{
     padding: 0 10px;
     text-decoration: none;
+    color: black;
 }
 .hero1 {
     background: rgb(241, 135, 1);
