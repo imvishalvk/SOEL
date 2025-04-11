@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
 }
-
+/* headding */
 .head {
     background-color: #7678ED;
     height: 80px;
@@ -11,7 +11,19 @@ body {
     align-items: center;
     padding-left: 20px;
 }
-
+.navbar{
+    display: flex;
+}
+.nav{
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-left: auto;
+    padding-right: 20px;
+}
+.navlink{
+    padding: 0 10px;
+    text-decoration: none;
+}
 .hero1 {
     background: rgb(241, 135, 1);
     background: linear-gradient(0deg, rgba(241, 135, 1, 1) 25%, rgba(243, 91, 4, 1) 25%);
