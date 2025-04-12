@@ -14,9 +14,7 @@ body {
 .logo{
     height: 50px;
 }
-.navbar{
-    display: flex;
-}
+
 .nav{
     font-size: 1.5rem;
     margin-left: auto;

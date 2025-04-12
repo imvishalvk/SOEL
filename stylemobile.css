@@ -27,10 +27,20 @@
 @media screen and (max-width: 749px) {
 
     .head {
-        height: 60px;
+        height: 90px;
         font-size: 40px;
+        flex-direction: column;
+        justify-content: center;
+        
     }
-
+    .logphone{
+        display: flex;
+        justify-content: center;
+    }
+    .nav{
+        padding-right: 0;
+        margin-left: 0;
+    }
     .hero1 {
         display: flex;
         flex-direction: column-reverse;
@@ -186,6 +196,7 @@
     .footer-container{
         padding-bottom: 20px;
     }
+    
 }
 @media screen and (max-width: 460px) {
     .navlink{
@@ -193,6 +204,9 @@
     }
     .logo{
         height: 35px;
+    }
+    .head{
+        height: 70px;
     }
 }
 
