@@ -1,0 +1,15 @@
+.topribbon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 20px;
+    background: #171740;
+    /* color: white; */
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+.left a, .right a {
+  margin-right: 15px;
+  color: white;
+  text-decoration: none;
+}
