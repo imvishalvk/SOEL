@@ -1,8 +1,12 @@
 import React from 'react'
 import logo from '../assets/SOEL-logo.png'
+import TopRibbon from '../topRibbon/TopRibbon'
 function header() {
   return (
-    <div className='header'>
+    
+    <>
+      <TopRibbon/>
+      <div className='header'>
       
         <div className="logo">
             <img src={logo} alt="" />
@@ -14,6 +18,7 @@ function header() {
             <a href="">Contact</a>
         </div>
     </div>
+    </>
   )
 }
 
