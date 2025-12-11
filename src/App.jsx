@@ -2,7 +2,8 @@ import { useState } from 'react'
 import Header from './Components/header/Header'
 import './App.css'
 import Landing from './Components/Landing'
-// import TopRibbon from './Components/topRibbon/TopRibbon'
+import Subjects from './Components/Subjects'
+
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       {/* <TopRibbon/> */}
       <Header/>
       <Landing />
+      <Subjects/>
     </>
   )
 }

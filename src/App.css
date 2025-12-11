@@ -7,3 +7,28 @@
   height: 600px;
   background: linear-gradient(104.23deg, #FFF3E7 1.55%, #EFFFFF 99.04%);
 }
+
+/* Subject Start */
+.subjects{
+  padding: 20px 0;
+}
+  .subjects .head h2{
+    text-align: center;
+    margin: 10px 0;
+  }
+  .subjects .allSubjects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .subjects .allSubjects .card{
+    height: 200px;
+    width: 300px;
+    background-color: #FFF3E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+  }
+/* Subject End */
