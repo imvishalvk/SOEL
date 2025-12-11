@@ -1,0 +1,40 @@
+.topribbon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 20px;
+    background: #171740;
+    /* color: white; */
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.left a, .right a {
+  /* margin: 0 15px; */
+  color: white;
+  text-decoration: none;
+}
+.left a{
+    padding: 0 15px;
+}
+.navbar{
+  height: 80px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(104.23deg, #FFF3E7 1.55%, #EFFFFF 99.04%);
+}
+.logo img{
+  height: 60px;
+}
+.menu a{
+  margin: 0 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+}
+.socialIcons{
+    font-size: 1.3rem;
+    margin: 0 10px;
+}
