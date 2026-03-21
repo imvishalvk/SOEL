@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 6px 20px;
-    background: #171740;
+    background-color: #171740;
     /* color: white; */
     padding-top: 17px;
     padding-bottom: 17px;
@@ -15,18 +15,31 @@
   text-decoration: none;
 }
 .left a{
-    padding: 0 15px;
+    margin:  0 15px;
 }
 .navbar{
-  height: 80px;
+  height: 50px;
   padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(104.23deg, #FFF3E7 1.55%, #EFFFFF 99.04%);
+      background: linear-gradient(104.23deg, #FFF3E7 1.55%, #EFFFFF 99.04%);
+  animation: reverseGradient 6s ease-in-out infinite alternate;
+  background-size: 200% 200%;
+}
+@keyframes reverseGradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
 }
 .logo img{
-  height: 60px;
+  height: 40px;
+  /* position: absolute;
+  z-index: 1;
+  top: 10; */
 }
 .menu a{
   margin: 0 20px;
@@ -37,4 +50,9 @@
 .socialIcons{
     font-size: 1.3rem;
     margin: 0 10px;
+}
+@media screen and (max-width:749px) {
+  .navbar{
+    flex-direction: column;
+  }
 }

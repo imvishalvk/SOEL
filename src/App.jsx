@@ -1,15 +1,14 @@
-import { useState } from 'react'
-import Header from './Components/header/Header'
 import './App.css'
-import Landing from './Components/Landing'
+import Header from './Components/header/Header'
+import Landing from './Components/Landing/Landing'
 import Subjects from './Components/Subjects'
+
 
 
 function App() {
 
   return (
     <>
-      {/* <TopRibbon/> */}
       <Header/>
       <Landing />
       <Subjects/>

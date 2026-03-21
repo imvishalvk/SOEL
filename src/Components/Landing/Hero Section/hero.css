@@ -1,0 +1,116 @@
+/* hero 1 start */
+
+.hero1 {
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(104.23deg, #FFF3E7 1.55%, #EFFFFF 99.04%);
+    /* margin-top: -20px; */
+    background: linear-gradient(104.23deg, #FFF3E7 1.55%, #EFFFFF 99.04%);
+    animation: reverseGradient 6s ease-in-out infinite alternate;
+    background-size: 200% 200%;
+}
+
+@keyframes reverseGradient {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+.shape1 {
+    /* margin-top: -100px; */
+    width: 511px;
+    height: 390px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #674CEF;
+    opacity: 0.05;
+    -webkit-mask: url('data:image/svg+xml;utf8,<svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300.000000 229.000000"><g transform="translate(0.000000,229.000000) scale(0.050000,-0.050000)" stroke="none"> <path d="M141 4465 c-14 -63 -52 -172 -83 -243 l-58 -128 0 -1103 0 -1104 161 -25 c725 -111 957 -282 1349 -992 380 -688 565 -857 940 -859 329 -2 502 117 988 676 520 600 624 665 1452 915 793 238 1065 450 1103 861 28 303 -84 492 -604 1022 -485 493 -610 674 -672 973 l-25 122 -2263 0 -2263 0 -25 -115z"/> </g> </svg> ');
+    mask: url('data:image/svg+xml;utf8,<svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300.000000 229.000000"><g transform="translate(0.000000,229.000000) scale(0.050000,-0.050000)" stroke="none"> <path d="M141 4465 c-14 -63 -52 -172 -83 -243 l-58 -128 0 -1103 0 -1104 161 -25 c725 -111 957 -282 1349 -992 380 -688 565 -857 940 -859 329 -2 502 117 988 676 520 600 624 665 1452 915 793 238 1065 450 1103 861 28 303 -84 492 -604 1022 -485 493 -610 674 -672 973 l-25 122 -2263 0 -2263 0 -25 -115z"/> </g> </svg> ');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center center;
+    mask-position: center center;
+    -webkit-mask-size: auto;
+    mask-size: auto;
+}
+
+.shape2 {
+    width: 601px;
+    height: 482px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(239, 128, 46, 0.03);
+    -webkit-mask: url('data:image/svg+xml;utf8,<svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300.000000 249.000000"><g transform="translate(0.000000,249.000000) scale(0.050000,-0.050000)" stroke="none"> <path d="M111 4865 c-22 -201 -51 -359 -81 -446 -25 -71 -30 -276 -30 -1300 l0 -1216 115 -22 c752 -142 942 -288 1355 -1041 332 -604 541 -805 872 -835 340 -31 567 120 1090 725 500 578 608 644 1498 910 658 197 933 385 1032 701 114 366 12 577 -563 1168 -609 626 -702 786 -732 1266 l-13 205 -2266 0 -2265 0 -12 -115z"/> </g> </svg>');
+    mask: url('data:image/svg+xml;utf8,<svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300.000000 249.000000"><g transform="translate(0.000000,249.000000) scale(0.050000,-0.050000)" stroke="none"> <path d="M111 4865 c-22 -201 -51 -359 -81 -446 -25 -71 -30 -276 -30 -1300 l0 -1216 115 -22 c752 -142 942 -288 1355 -1041 332 -604 541 -805 872 -835 340 -31 567 120 1090 725 500 578 608 644 1498 910 658 197 933 385 1032 701 114 366 12 577 -563 1168 -609 626 -702 786 -732 1266 l-13 205 -2266 0 -2265 0 -12 -115z"/> </g> </svg>');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center center;
+    mask-position: center center;
+    -webkit-mask-size: auto;
+    mask-size: auto;
+}
+
+.main-text {
+
+    overflow: hidden;
+}
+
+.main-text h2 {
+    margin: 0 40px;
+    font-size: 2.5rem;
+    animation: slideText 10s ease-in-out infinite;
+    display: inline-block;
+}
+
+.main-text h2 span {
+    color: #39D4D6;
+}
+
+@keyframes slideText {
+    0% {
+        transform: scale(0.95);
+    }
+
+    20% {
+        transform: scale(1.01);
+    }
+
+    70% {
+        transform: scale(1.01);
+    }
+
+    100% {
+        transform: scale(0.95)
+    }
+}
+
+.heroBtn {
+    position: absolute;
+    z-index: 2;
+    left: 80px;
+    bottom: 80px;
+}
+.hero1-right{
+    display: flex;
+    /* align-items: end; */
+    text-align: end;
+    /* vertical-align: bottom; */
+    height: 100%;
+}
+/* .hero1img{
+    height: ;: 65%;
+} */
+
+
+
+/* hero 1 end */

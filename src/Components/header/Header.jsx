@@ -49,7 +49,9 @@ function header() {
           <a href="">Plans</a>
           <a href="">About</a>
           <a href="">Contact</a>
+          <button className='startButton'> <b> Apply Now</b> </button>
         </div>
+        
       </div>
     </div>
   )
