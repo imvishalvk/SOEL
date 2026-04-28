@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -22,6 +27,7 @@
   border-radius: 10px;
   margin: 10px;
   transition: 0.2s ease-in-out;
+  height: 50px;
 }
 .startButton:hover{
   transform: scale(1.05);

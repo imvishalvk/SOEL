@@ -1,58 +1,128 @@
+/* --- Desktop Styles --- */
+.header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 .topribbon {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 6px 20px;
+    padding: 12px 40px;
     background-color: #171740;
-    /* color: white; */
-    padding-top: 17px;
-    padding-bottom: 17px;
+    color: white;
 }
 
 .left a, .right a {
-  /* margin: 0 15px; */
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-right: 20px;
 }
-.left a{
-    margin:  0 15px;
+
+.navbar {
+    height: 70px; /* Slightly taller for better spacing */
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(104.23deg, #FFF3E7 1.55%, #EFFFFF 99.04%);
+    background-size: 200% 200%;
+    animation: reverseGradient 6s ease-in-out infinite alternate;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
-.navbar{
-  height: 50px;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-      background: linear-gradient(104.23deg, #FFF3E7 1.55%, #EFFFFF 99.04%);
-  animation: reverseGradient 6s ease-in-out infinite alternate;
-  background-size: 200% 200%;
+
+.logo img {
+    height: 45px;
 }
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #171740;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #39D4D6;
+}
+
+.mobile-menu-icon {
+    display: none; /* Hidden on desktop */
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: #171740;
+    cursor: pointer;
+}
+
+/* --- Mobile Responsiveness --- */
+
+@media screen and (max-width: 992px) {
+    .topribbon .right {
+        display: none; /* Hide social icons on small screens to reduce clutter */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .topribbon {
+        justify-content: center;
+        padding: 8px 10px;
+    }
+    
+    .hide-mobile {
+        display: none; /* Hide email text, keep icon if needed */
+    }
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .mobile-menu-icon {
+        display: block; /* Show hamburger */
+    }
+
+    /* Transform Menu into a Full-screen overlay or Dropdown */
+    .menu {
+        position: absolute;
+        top: 100px;
+        left: -100%; /* Hidden by default */
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: white;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 50px;
+        transition: all 0.4s ease;
+        z-index: 999;
+    }
+
+    .menu.active {
+        left: 0; /* Slide in */
+    }
+
+    .menu a {
+        margin: 20px 0;
+        font-size: 1.4rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-btn {
+        margin-top: 20px;
+    }
+}
+
 @keyframes reverseGradient {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 100% 100%;
-  }
-}
-.logo img{
-  height: 40px;
-  /* position: absolute;
-  z-index: 1;
-  top: 10; */
-}
-.menu a{
-  margin: 0 20px;
-  text-decoration: none;
-  color: black;
-  font-size: 1.1rem;
-}
-.socialIcons{
-    font-size: 1.3rem;
-    margin: 0 10px;
-}
-@media screen and (max-width:749px) {
-  .navbar{
-    flex-direction: column;
-  }
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 100%; }
 }

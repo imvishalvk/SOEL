@@ -1,0 +1,128 @@
+.footer-section {
+  background-color: #f0f8ff; /* Light blueish background */
+  padding-top: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Main Content Columns */
+.footer-main-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 40px;
+}
+
+.footer-col h3 {
+  color: #2d1b69;
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+}
+
+.footer-col p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 15px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+}
+
+.footer-col ul li span {
+  color: #2d1b69;
+  font-weight: bold;
+}
+
+/* Contact Area */
+.footer-contact {
+  padding: 30px 0;
+  border-top: 1px solid #dbe9f5;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.footer-contact p {
+  margin-bottom: 10px;
+}
+
+/* Copyright Bar */
+.footer-bottom {
+  text-align: center;
+  padding: 25px 0;
+  border-top: 1px solid #dbe9f5;
+  color: #888;
+  font-size: 0.85rem;
+}
+
+/* --- MOBILE RESPONSIVE --- */
+
+@media (max-width: 992px) {
+  .newsletter-bar {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .footer-input-group {
+    margin: 0;
+    width: 100%;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .footer-main-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-col ul li {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-logo {
+    font-size: 2.2rem;
+  }
+
+  .footer-input-group {
+    flex-direction: column;
+    border: none;
+  }
+
+  .footer-input-group input {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .get-touch-btn {
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .footer-contact {
+    text-align: center;
+  }
+}

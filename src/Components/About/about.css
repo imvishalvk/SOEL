@@ -1,0 +1,149 @@
+.about {
+    position: relative;
+    background-color: rgba(239, 128, 46, 0.07);
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+.aboutBg {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.07;
+    height: 550px;
+    top: 0;
+    left: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container .left {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 0 40px 40px 0;
+}
+
+.container .left .teacher {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.container .left .student {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 200px;
+    border-radius: 40px 0;
+    border-top: 15px solid white;
+    border-left: 15px solid white;
+
+}
+
+.container .right {
+    flex: 1;
+    padding: 20px;
+}
+
+.container .right h2 {
+    font-size: 2rem;
+    color: #2d1b69;
+    margin: 10px 0;
+}
+
+.container .right .rightBox {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.about-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.container .right .line {
+    width: 4px;
+    border-radius: 10px;
+    height: 80px;
+    background-color: #2d1b69;
+}
+
+.startButton {
+    padding: 12px 25px;
+    background-color: #ef802e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.about svg {
+    height: 20px;
+    fill: #ef802e;
+    transform: rotate(220deg);
+}
+
+
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .container .left {
+        padding: 0 20px 40px 0;
+        margin-bottom: 50px;
+    }
+
+    .container .right .rightBox {
+        text-align: left;
+        flex-wrap: wrap;
+    }
+
+    .container .right .line {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .container .left .student {
+        height: 150px;
+        border-top-width: 10px;
+        border-left-width: 10px;
+    }
+
+    .container .right h2 {
+        font-size: 1.5rem;
+    }
+
+    .container .right .rightBox {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* .about-list li {
+        justify-content: center;
+    } */
+}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../../assets/SOEL-logo.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -8,25 +8,28 @@ import {
   faXTwitter,
   faYoutube
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faBars, faTimes } from "@fortawesome/free-solid-svg-icons"; // Added Icons
 import './header.css'
-function header() {
-  return (
 
+function Header() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  return (
     <div className='header'>
+      {/* Top Ribbon - Hidden on small mobile to save space */}
       <div className="topribbon">
         <div className="left">
-          <a href="info@soel.co.in">
+          <a href="mailto:info@soel.co.in">
             <FontAwesomeIcon icon={faEnvelope} />
-            info@soel.co.in
+            <span className="hide-mobile"> info@soel.in</span>
           </a>
-          <a href="tel:+917974010211">📞 +91 79740 10211</a>
+          <a href="tel:+917974010211">📞 +91 98765 43210</a>
         </div>
-        <div className="right">
+        <div className="right hide-tablet">
           <a href="https://www.facebook.com/soelglobal" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faFacebookF} className='socialIcons' />
           </a>
-          <a href="https://www.instagram.com/soelglobal/">
+          <a href="https://www.instagram.com/soelglobal/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faInstagram} className='socialIcons' />
           </a>
           <a href="https://www.linkedin.com/company/soelglobal" target="_blank" rel="noopener noreferrer">
@@ -40,21 +43,27 @@ function header() {
           </a>
         </div>
       </div>
-      <div className='navbar'>
+
+      <nav className='navbar'>
         <div className="logo">
-          <img src={logo} alt="" />
+          <img src={logo} alt="SOEL Logo" />
         </div>
-        <div className="menu">
-          <a href="">Home</a>
-          <a href="">Plans</a>
-          <a href="">About</a>
-          <a href="">Contact</a>
-          <button className='startButton'> <b> Apply Now</b> </button>
+
+        {/* Hamburger Icon for Mobile */}
+        <button className="mobile-menu-icon" onClick={() => setIsMobile(!isMobile)}>
+          {isMobile ? <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} />}
+        </button>
+
+        <div className={isMobile ? "menu active" : "menu"}>
+          <a href="#home" onClick={() => setIsMobile(false)}>Home</a>
+          <a href="#plans" onClick={() => setIsMobile(false)}>Plans</a>
+          <a href="#about" onClick={() => setIsMobile(false)}>About</a>
+          <a href="#contact" onClick={() => setIsMobile(false)}>Contact</a>
+          <button className='startButton nav-btn'> <b>Apply Now</b> </button>
         </div>
-        
-      </div>
+      </nav>
     </div>
   )
 }
 
-export default header
+export default Header;
