@@ -10,6 +10,7 @@ function Hero1() {
             <div className="shape2"></div>
             <div className="hero1-Left">
             <div className="main-text">
+                <p>Shaping Your Future</p>
                 <h2>LEARN FUTURE SKILLS ONLINE <br /> WHAT MARKET <span>DEMANDING</span></h2>
             </div>
             <button className='startButton heroBtn'> <b> Start Now</b> </button>

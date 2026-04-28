@@ -1,0 +1,23 @@
+
+.subjects{
+  padding: 20px 0;
+}
+  .subjects .head h2{
+    text-align: center;
+    margin: 20px 0 40px 0;
+  }
+  .subjects .allSubjects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .subjects .allSubjects .card{
+    height: 200px;
+    width: 300px;
+    background-color: #FFF3E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+  }

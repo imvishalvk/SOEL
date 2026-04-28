@@ -1,7 +1,8 @@
 import './App.css'
+import About from './Components/About/About'
 import Header from './Components/header/Header'
 import Landing from './Components/Landing/Landing'
-import Subjects from './Components/Subjects'
+import Subjects from './Components/Landing/Subjects/Subjects'
 
 
 
@@ -12,6 +13,7 @@ function App() {
       <Header/>
       <Landing />
       <Subjects/>
+      <About />
     </>
   )
 }

@@ -1,3 +1,4 @@
+import './subjects.css'
 
 function Subjects() {
   return (
@@ -10,9 +11,6 @@ function Subjects() {
                 <h3>Self Development</h3>
             </div>
             <div className="card">
-                <h3>Tech & Inovation</h3>
-            </div>
-            <div className="card">
                 <h3>Culture</h3>
             </div>
             <div className="card">
@@ -23,9 +21,6 @@ function Subjects() {
             </div>
             <div className="card">
                 <h3>Music Dance & Theater</h3>
-            </div>
-            <div className="card">
-                <h3>Creative Writing</h3>
             </div>
             <div className="card">
                 <h3>Computer & AI</h3>
