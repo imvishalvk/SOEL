@@ -2,13 +2,20 @@
 .hero1 {
     height: 500px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     position: relative;
     background: linear-gradient(104.23deg, #FFF3E7 1.55%, #EFFFFF 99.04%);
     background: linear-gradient(104.23deg, #FFF3E7 1.55%, #EFFFFF 99.04%);
     animation: reverseGradient 6s ease-in-out infinite alternate;
-    background-size: 200% 200%;
+    /* background-size: 200% 200%; */
+    padding: 0 50px;
+}
+.hero1img{
+    height: 450px;
+    margin: auto;
+    border-radius: 45%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 @keyframes reverseGradient {
@@ -64,7 +71,7 @@
 
 .main-text h2, .main-text p {
     margin: 0 40px;
-    font-size: 2.5rem;
+    font-size: 3rem;
     animation: slideText 10s ease-in-out infinite;
     display: inline-block;
 }
@@ -113,6 +120,7 @@
         height: auto;
         padding-top: 80px;
         text-align: center;
+        padding: 0;
     }
 
     .hero1-Left {
@@ -143,6 +151,8 @@
     .hero1img {
         width: 80%;
         margin: 20px;
+        border-radius: 20px;
+        height: auto;
     }
 
     .shape1, .shape2 {

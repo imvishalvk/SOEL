@@ -8,7 +8,7 @@ import {
   faXTwitter,
   faYoutube
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faBars, faTimes } from "@fortawesome/free-solid-svg-icons"; // Added Icons
+import { faEnvelope, faBars, faTimes } from "@fortawesome/free-solid-svg-icons"; 
 import './header.css'
 
 function Header() {
@@ -16,7 +16,7 @@ function Header() {
 
   return (
     <div className='header'>
-      {/* Top Ribbon - Hidden on small mobile to save space */}
+
       <div className="topribbon">
         <div className="left">
           <a href="mailto:info@soel.co.in">
@@ -49,7 +49,7 @@ function Header() {
           <img src={logo} alt="SOEL Logo" />
         </div>
 
-        {/* Hamburger Icon for Mobile */}
+
         <button className="mobile-menu-icon" onClick={() => setIsMobile(!isMobile)}>
           {isMobile ? <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} />}
         </button>
