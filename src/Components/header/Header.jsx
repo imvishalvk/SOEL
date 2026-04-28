@@ -55,7 +55,7 @@ function Header() {
         </button>
 
         <div className={isMobile ? "menu active" : "menu"}>
-          <a href="#home" onClick={() => setIsMobile(false)}>Home</a>
+          <a href="/#" onClick={() => setIsMobile(false)}>Home</a>
           <a href="#plans" onClick={() => setIsMobile(false)}>Plans</a>
           <a href="#about" onClick={() => setIsMobile(false)}>About</a>
           <a href="#contact" onClick={() => setIsMobile(false)}>Contact</a>

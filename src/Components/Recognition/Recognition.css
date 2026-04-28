@@ -19,9 +19,12 @@
   gap: 30px;
 }
 
-/* Side Images */
 .banner-side {
   flex: 1;
+}
+.left-img,.right-img{
+  animation: moveHorizontal 2s linear infinite;
+  scale: 1.2;
 }
 
 .banner-side img {
@@ -181,5 +184,20 @@
     padding: 15px;
     border-radius: 10px;
     width: 100%;
+  }
+}
+
+@keyframes moveHorizontal {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  50% {
+    -webkit-transform: translate3d(15px, 0, 0);
+    transform: translate3d(15px, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
   }
 }

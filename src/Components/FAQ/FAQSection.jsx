@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './FAQSection.css';
+import faqImg1 from '../../assets/Images/student studiying.png'
+import faqImg2 from '../../assets/Images/Studying/kid.png'
 
 const faqData = [
   {
@@ -58,12 +60,12 @@ const FAQSection = () => {
         <div className="faq-right">
           <div className="image-stack">
             <img 
-              src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=400" 
+              src={faqImg1}
               alt="Learning" 
               className="img-back"
             />
             <img 
-              src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&q=80&w=400" 
+              src={faqImg2}
               alt="Student" 
               className="img-front"
             />
