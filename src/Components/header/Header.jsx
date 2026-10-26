@@ -21,7 +21,7 @@ function Header() {
         <div className="left">
           <a href="mailto:info@soel.co.in">
             <FontAwesomeIcon icon={faEnvelope} />
-            <span className="hide-mobile"> info@soel.in</span>
+            <span className=""> info@soel.in</span>
           </a>
           <a href="tel:+917974010211">📞 +91 98765 43210</a>
         </div>

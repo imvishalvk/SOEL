@@ -75,7 +75,7 @@
 
 @media screen and (max-width: 768px) {
     .topribbon {
-        justify-content: center;
+        justify-content: space-around;
         padding: 8px 10px;
     }
     

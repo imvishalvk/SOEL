@@ -1,8 +1,18 @@
+/* ========================================
+   COURSE SECTION
+======================================== */
+
 .course-section {
   padding: 60px 20px;
   background-color: #ffffff;
-  font-family: 'Segoe UI', Roboto, sans-serif;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  overflow: hidden;
 }
+
+
+/* ========================================
+   COURSE HEADER
+======================================== */
 
 .course-header {
   text-align: center;
@@ -20,163 +30,606 @@
   font-size: 2.2rem;
   color: #2d1b69;
   font-weight: 800;
+  margin: 0;
 }
 
 .cyan-text {
   color: #4fd1c5;
 }
 
-/* Course Grid */
+
+/* ========================================
+   COURSE CAROUSEL
+======================================== */
+
 .course-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+
   gap: 30px;
+
+  /*
+    Full width container
+    Cards start from LEFT
+  */
+  width: 100%;
+
   max-width: 1200px;
+
+  /*
+    Keep container itself aligned
+    with the page
+  */
   margin: 0 auto 80px;
+
+  /*
+    Cards remain in one row
+  */
+  flex-wrap: nowrap;
+
+  /*
+    Horizontal scrolling
+  */
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  /*
+    Smooth scrolling
+  */
+  scroll-behavior: smooth;
+
+  /*
+    Hide scrollbar
+  */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  /*
+    Prevent horizontal page movement
+  */
+  overscroll-behavior-x: contain;
+
+  /*
+    Small space around cards
+  */
+  padding: 10px 5px 20px;
+
+  box-sizing: border-box;
+
+  /*
+    IMPORTANT:
+    Cards always begin from the LEFT
+  */
+  justify-content: flex-start;
 }
 
-.course-card {
-  background: #ffffff;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  border: 1px solid #f0f0f0;
-  transition: transform 0.3s ease;
+
+/* ========================================
+   HIDE CHROME / SAFARI SCROLLBAR
+======================================== */
+
+.course-grid::-webkit-scrollbar {
+  display: none;
 }
+
+
+/* ========================================
+   COURSE CARD
+======================================== */
+
+.course-card {
+
+  /*
+    Desktop:
+    3 cards visible
+  */
+  flex: 0 0 calc((100% - 60px) / 3);
+
+  min-width: calc((100% - 60px) / 3);
+
+  background: #ffffff;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.05);
+
+  border: 1px solid #f0f0f0;
+
+  box-sizing: border-box;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* ========================================
+   CARD HOVER
+======================================== */
 
 .course-card:hover {
   transform: translateY(-5px);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ========================================
+   CARD IMAGE
+======================================== */
+
+.card-image {
+  width: 100%;
+  overflow: hidden;
 }
 
 .card-image img {
   width: 100%;
   height: auto;
+
   display: block;
+
+  transition:
+    transform 0.4s ease;
 }
+
+
+/* Image hover */
+
+.course-card:hover .card-image img {
+  transform: scale(1.03);
+}
+
+
+/* ========================================
+   CARD CONTENT
+======================================== */
 
 .card-content {
   padding: 20px;
 }
 
+
+/* ========================================
+   BADGES
+======================================== */
+
 .card-badges {
   display: flex;
+
+  align-items: center;
+
   gap: 10px;
+
   margin-bottom: 15px;
+
+  flex-wrap: wrap;
 }
 
 .badge-experts {
   background: #4fd1c5;
+
   color: white;
+
   padding: 4px 12px;
+
   border-radius: 5px;
+
   font-size: 0.8rem;
+
+  white-space: nowrap;
 }
 
 .badge-weeks {
   background: #6c5ce7;
+
   color: white;
+
   padding: 4px 12px;
+
   border-radius: 5px;
+
   font-size: 0.8rem;
+
+  white-space: nowrap;
 }
+
+
+/* ========================================
+   CARD TITLE
+======================================== */
 
 .card-title {
   font-size: 1.05rem;
+
   color: #2d1b69;
+
   line-height: 1.4;
+
+  margin-top: 0;
+
   margin-bottom: 15px;
-  height: 3rem; /* ensures alignment */
+
+  height: 3rem;
+
   overflow: hidden;
 }
 
+
+/* ========================================
+   CARD META
+======================================== */
+
 .card-meta {
   display: flex;
+
   justify-content: space-between;
+
+  align-items: center;
+
+  gap: 10px;
+
   font-size: 0.85rem;
+
   color: #777;
+
   margin-bottom: 20px;
+
   border-top: 1px solid #eee;
+
   padding-top: 15px;
 }
 
+
+/* ========================================
+   CARD FOOTER
+======================================== */
+
+.card-footer {
+  display: flex;
+  align-items: center;
+}
+
+
+/* ========================================
+   PRICE BUTTON
+======================================== */
+
 .price-btn {
   background: #ff8c42;
+
   color: white;
+
   border: none;
+
   padding: 10px 25px;
+
   border-radius: 10px;
+
   font-weight: bold;
+
   cursor: pointer;
+
   font-size: 1rem;
+
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
 }
+
+.price-btn:hover {
+  transform: scale(1.03);
+}
+
+
+/* ========================================
+   STATS CONTAINER
+======================================== */
 
 .stats-container {
   background-color: #6c5ce7;
+
   border-radius: 30px;
+
   padding: 60px 40px;
+
   max-width: 1200px;
+
   margin: 0 auto;
+
+  box-sizing: border-box;
 }
+
+
+/* ========================================
+   STATS GRID
+======================================== */
 
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
   gap: 20px;
 }
 
+
+/* ========================================
+   STAT CARD
+======================================== */
+
 .stat-card {
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid
+    rgba(255, 255, 255, 0.2);
+
   border-radius: 15px;
+
   padding: 30px 10px;
+
   text-align: center;
+
   color: white;
+
+  box-sizing: border-box;
 }
+
+
+/* ========================================
+   STAT ICON
+======================================== */
 
 .stat-icon {
   width: 50px;
+
   height: 50px;
+
   border-radius: 50%;
+
   margin: 0 auto 15px;
+
   display: flex;
+
   justify-content: center;
+
   align-items: center;
 }
-.stat-icon svg{
-    height: 40px;
 
-    /* height: 40px; */
+.stat-icon svg {
+  height: 40px;
+  width: 40px;
 }
+
+
+/* ========================================
+   STAT TEXT
+======================================== */
 
 .stat-card h3 {
   font-size: 1.8rem;
+
   margin: 5px 0;
 }
 
 .stat-card p {
   font-size: 0.9rem;
+
   opacity: 0.9;
+
+  margin-bottom: 0;
 }
+
+
+/* ========================================
+   TABLET
+======================================== */
 
 @media (max-width: 992px) {
-  .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
+
+  /*
+    2 cards visible
+  */
+
+  .course-card {
+    flex: 0 0 calc((100% - 30px) / 2);
+
+    min-width: calc((100% - 30px) / 2);
   }
+
+
+  /* Stats */
+
+  .stats-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
 }
 
+
+/* ========================================
+   MOBILE
+======================================== */
+
 @media (max-width: 600px) {
+
+  .course-section {
+    padding: 50px 15px;
+  }
+
+
+  /* ========================================
+     HEADER
+  ======================================== */
+
+  .course-header {
+    margin-bottom: 35px;
+  }
+
   .course-header h2 {
     font-size: 1.8rem;
   }
-  
+
+
+  /* ========================================
+     MOBILE CAROUSEL
+  ======================================== */
+
+  .course-grid {
+
+    gap: 16px;
+
+    /*
+      Important:
+      Extra horizontal padding allows
+      the card to sit in the CENTER.
+    */
+    padding-left: 5%;
+    padding-right: 5%;
+
+    margin-bottom: 60px;
+
+    /*
+      Keep cards left aligned internally.
+      The first card starts after the
+      5% padding.
+    */
+    justify-content: flex-start;
+  }
+
+
+  /*
+    ONE CARD VISIBLE
+  */
+
+  .course-card {
+
+    /*
+      90% of carousel width
+      leaves equal space on both sides
+    */
+    flex: 0 0 90%;
+
+    min-width: 90%;
+  }
+
+
+  /* ========================================
+     CONTENT
+  ======================================== */
+
+  .card-content {
+    padding: 18px;
+  }
+
+
+  /* ========================================
+     TITLE
+  ======================================== */
+
+  .card-title {
+    font-size: 1rem;
+
+    height: auto;
+
+    min-height: 3rem;
+  }
+
+
+  /* ========================================
+     META
+  ======================================== */
+
+  .card-meta {
+    font-size: 0.8rem;
+  }
+
+
+  /* ========================================
+     STATS
+  ======================================== */
+
   .stats-grid {
     grid-template-columns: 1fr;
   }
 
   .stats-container {
     padding: 40px 20px;
+
+    border-radius: 25px;
   }
-  
+
+}
+
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 400px) {
+
+  .course-section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+
+  /* ========================================
+     SMALL MOBILE CAROUSEL
+  ======================================== */
+
   .course-grid {
-    grid-template-columns: 1fr;
+
+    /*
+      Keep the card centered
+    */
+    padding-left: 4%;
+    padding-right: 4%;
+
+    gap: 14px;
   }
+
+
+  .course-card {
+
+    /*
+      Single card
+    */
+    flex: 0 0 92%;
+
+    min-width: 92%;
+  }
+
+
+  .card-content {
+    padding: 16px;
+  }
+
+
+  .card-badges {
+    gap: 6px;
+  }
+
+
+  .badge-experts,
+  .badge-weeks {
+
+    font-size: 0.72rem;
+
+    padding: 4px 9px;
+  }
+
+
+  .card-meta {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 5px;
+  }
+
 }
