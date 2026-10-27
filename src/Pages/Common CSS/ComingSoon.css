@@ -1,0 +1,249 @@
+/* Core Styling & Reset Variables - SOEL Inspired Light Mode Layout */
+:root {
+  --color-bg: #faf9f6;          /* Elegant off-white / alabaster canvas */
+  --color-surface: #ffffff;     /* Pure white for containers/cards */
+  --color-text-main: #1a1a1a;   /* Rich deep charcoal for luxury contrast */
+  --color-text-muted: #666666;  /* Sophined mid-tone gray */
+  --color-accent: #113355;      /* Deep academic navy premium accent */
+  --color-accent-gold: #b89765; /* Refined, muted champagne gold */
+  --border-premium: rgba(26, 26, 26, 0.08);
+  
+  --font-serif: 'Cormorant Garamond', 'Didot', 'Bodoni MT', serif;
+  --font-sans: 'Montserrat', 'Helvetica Neue', sans-serif;
+  --letter-spacing-wide: 0.25em;
+  --letter-spacing-widest: 0.4em;
+}
+
+/* Base Wrapper altered to support vertical scrolling for multiple sections */
+.luxury-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  font-family: var(--font-sans);
+  box-sizing: border-box;
+}
+
+/* Light Mode Aesthetic Ambient Backgrounds */
+.luxury-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at top center, transparent 40%, rgba(0, 0, 0, 0.02) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.luxury-glow {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(184, 151, 101, 0.04) 0%, transparent 70%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Sectional Layout Configuration */
+.luxury-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 3rem 1rem; /* Comfortable padding for the main hero section */
+  box-sizing: border-box;
+}
+
+/* To add more sections below, apply this wrapper class in your JSX */
+.luxury-section {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1100px;
+  padding: 5rem 2rem;
+  border-top: 1px solid var(--border-premium);
+  box-sizing: border-box;
+  background-color: var(--color-surface);
+}
+
+/* Header & Typography */
+.luxury-tagline {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: var(--letter-spacing-widest);
+  color: var(--color-accent-gold);
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+}
+
+.luxury-brand {
+  font-family: var(--font-serif);
+  font-size: 3.75rem;
+  font-weight: 300;
+  letter-spacing: var(--letter-spacing-wide);
+  margin: 0;
+  color: var(--color-accent);
+  text-transform: uppercase;
+}
+
+.luxury-headline {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-text-main);
+  margin-bottom: 1.5rem;
+}
+
+.luxury-description {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--color-text-muted);
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Countdown Elements (Light Mode Adaption) */
+.luxury-countdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  border-top: 1px solid var(--border-premium);
+  border-bottom: 1px solid var(--border-premium);
+  padding: 2.5rem 0;
+  width: 100%;
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+}
+
+.countdown-number {
+  font-family: var(--font-serif);
+  font-size: 2.75rem;
+  font-weight: 300;
+  color: var(--color-accent);
+}
+
+.countdown-label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+  color: var(--color-text-muted);
+  margin-top: 0.5rem;
+}
+
+.countdown-divider {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  color: var(--color-accent-gold);
+  opacity: 0.4;
+  padding-bottom: 1.5rem;
+}
+
+/* Premium Form Styling */
+.luxury-footer {
+  width: 100%;
+}
+
+.luxury-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.luxury-input {
+  background: var(--color-surface);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid var(--color-text-main);
+  padding: 1.2rem 1rem;
+  color: var(--color-text-main);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  outline: none;
+}
+
+.luxury-input:focus {
+  border-bottom: 1px solid var(--color-accent);
+  background-color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+}
+
+.luxury-input::placeholder {
+  color: #999999;
+}
+
+.luxury-button {
+  background-color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  color: #ffffff;
+  padding: 1.2rem 2rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: var(--letter-spacing-wide);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.luxury-button:hover {
+  background-color: transparent;
+  color: var(--color-accent);
+}
+
+.luxury-success-message {
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  color: var(--color-accent-gold);
+  font-weight: 500;
+}
+
+/* Responsive Scaling */
+@media (max-width: 768px) {
+  .luxury-brand {
+    font-size: 2.75rem;
+  }
+  .luxury-content {
+    gap: 3.5rem;
+    padding: 4rem 1.5rem;
+  }
+  .luxury-countdown {
+    gap: 0.5rem;
+  }
+  .countdown-number {
+    font-size: 2rem;
+  }
+  .countdown-item {
+    min-width: 60px;
+  }
+}
+
+/* .startButton{
+  text-decoration: none;
+  justify-content: center;
+} */

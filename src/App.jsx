@@ -1,29 +1,21 @@
 import './App.css'
-import About from './Components/About/About'
-import CourseSection from './Components/Courses/CourseSection'
-import Footer from './Components/Footer/Footer'
-import Header from './Components/header/Header'
-import FAQSection from './Components/FAQ/FAQSection'
-import Subjects from './Components/Subjects/Subjects'
-import Recognition from './Components/Recognition/Recognition'
-import Hero1 from './Components/Hero Section/Hero1'
-
-
+import Event from './Pages/Events/Events'
+import Home from './Pages/Home/Home'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
 
   return (
-    <>
-      <Header/>
-      <Hero1/>
-      <Subjects/>
-      <About />
-      <FAQSection/>
-      <CourseSection/>
-      <Recognition/>
-      <Footer/>
-
-    </>
+    <BrowserRouter>
+      <Routes>
+        {/* Define paths and the components they render */}
+        <Route path="/" element={<Home />} />
+        <Route path="/events" element={<Event />} />
+        
+        {/* Fallback route for 404 Not Found */}
+        {/* <Route path="*" element={<NotFound />} /> */}
+      </Routes>
+    </BrowserRouter>
   )
 }
 

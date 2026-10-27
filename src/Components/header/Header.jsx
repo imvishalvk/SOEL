@@ -10,9 +10,11 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faBars, faTimes } from "@fortawesome/free-solid-svg-icons"; 
 import './header.css'
+import { Navigate } from 'react-router-dom';
 
 function Header() {
   const [isMobile, setIsMobile] = useState(false);
+  const navigate = Navigate;
 
   return (
     <div className='header'>
@@ -45,9 +47,9 @@ function Header() {
       </div>
 
       <nav className='navbar'>
-        <div className="logo">
+        <a className="logo" href='/'>
           <img src={logo} alt="SOEL Logo" />
-        </div>
+        </a>
 
 
         <button className="mobile-menu-icon" onClick={() => setIsMobile(!isMobile)}>
@@ -55,11 +57,10 @@ function Header() {
         </button>
 
         <div className={isMobile ? "menu active" : "menu"}>
-          <a href="/#" onClick={() => setIsMobile(false)}>Home</a>
+          <a href="/" onClick={() => setIsMobile(false)}>Home</a>
           <a href="#plans" onClick={() => setIsMobile(false)}>Plans</a>
           <a href="#about" onClick={() => setIsMobile(false)}>About</a>
           <a href="#contact" onClick={() => setIsMobile(false)}>Contact</a>
-          <button className='startButton nav-btn'> <b>Apply Now</b> </button>
         </div>
       </nav>
     </div>

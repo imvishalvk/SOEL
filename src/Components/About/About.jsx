@@ -35,7 +35,7 @@ function About() {
               <li>{checkIcon} Globally inspired curriculum</li>
             </ul>
             <div className="line"></div>
-            <button className='startButton'><b>Start Now</b></button>
+            <button className='startButton' onClick={() => document.getElementById('plans')?.scrollIntoView({ behavior: 'smooth' })} ><b>Start Now</b></button>
           </div>
         </div>
 

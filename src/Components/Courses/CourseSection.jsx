@@ -536,11 +536,18 @@ const CourseSection = () => {
 
               <div className="card-footer">
 
-                <button
+                <span
                   className="price-btn"
-                  type="button"
                 >
                   {course.price}
+                </span>
+
+                <button
+                  className="apply-btn"
+                  type="button"
+                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                >
+                  Apply Now
                 </button>
 
               </div>
