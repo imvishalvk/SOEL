@@ -11,6 +11,7 @@ function App() {
         {/* Define paths and the components they render */}
         <Route path="/" element={<Home />} />
         <Route path="/events" element={<Event />} />
+        <Route path="*" element={<Home />} />
         
         {/* Fallback route for 404 Not Found */}
         {/* <Route path="*" element={<NotFound />} /> */}
